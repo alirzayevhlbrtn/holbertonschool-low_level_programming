@@ -1,38 +1,43 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdlib.h>
+#include <string.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-/* betty style doc for function main goes there */
 int main(void)
 {
-	/* print all aphabet */
-	int n, k, j, l;
+	int i;
+	int j;
+	int k;
+	int l;
 
-	/* your code goes there */
-	for (n = 48; n <= 57; n++)
+	for (i = 48; i < 58; i++)
 	{
-		for (k = 48; k <= 57; k++)
+		for (j = 48; j < 58; j++)
 		{
-			for (j = 48; j <= 57; j++)
+			l = j + 1;
+			for (k = i; k < 58; k++)
 			{
-				for (l = k + 1; l <= 57; l++)
+				if (j == 58)
 				{
-					putchar(n);
-					putchar(k);
-					putchar(32);
+					k = k + 1;
+				}
+				for (; l < 58; l++)
+				{
+					putchar(i);
 					putchar(j);
+					putchar(' ');
+					putchar(k);
 					putchar(l);
-					if (n < 57 || k < 56 || j < 57 || l < 57)
+					if (i < 57 || j < 56 || k < 57 || l < 57)
 					{
-						putchar(44);
-						putchar(32);
+						putchar(',');
+						putchar(' ');
 					}
 				}
+				l = 48;
 			}
 		}
 	}
