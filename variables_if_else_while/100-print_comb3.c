@@ -16,7 +16,7 @@ int main(void)
 	/* your code goes there */
 	for (n = 48; n <= 56; n++)
 	{
-		for (k=49; k <= 57; k++)
+		for (k = n + 1; k <= 57; k++)
 		{
 			putchar(n);
 			putchar(k);
