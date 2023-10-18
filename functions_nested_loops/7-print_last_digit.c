@@ -3,7 +3,6 @@
  * print_last_digit - Entry point
  *
  * @n: variable
- * @h: variable
  *
  * Return: last digit of integer n
  */
