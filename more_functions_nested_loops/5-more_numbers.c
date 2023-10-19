@@ -10,7 +10,7 @@ void more_numbers(void)
 	int j;
 	char a[] = "01234567891011121314";
 
-	for (i = 0; i <= 8; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 19; j++)
 		{
