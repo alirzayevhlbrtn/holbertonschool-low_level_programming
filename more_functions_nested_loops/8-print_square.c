@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - Entry point
+ * print_square - Entry point
  *
  * @size: variable
  *
