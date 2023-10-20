@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_numbers - Entry point
+ * print_line - Entry point
  *
  * Return: void
  */
@@ -18,6 +18,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
-		_putchar('_');
+		_putchar('\n');
 	}
 }
