@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - Entry point
+ * print_diagonal - Entry point
  *
  * @n: variable
  *
@@ -18,9 +18,11 @@ void print_diagonal(int n)
 	{
 		for (i = 0; i < n; i++)
 		{
-			for (j = 0; j <= i; j++)
+			j = 0;
+			while (j != i)
 			{
 				_putchar(' ');
+				j++;
 			}
 			_putchar('\\');
 			_putchar('\n');
