@@ -16,9 +16,9 @@ void puts2(char *str)
 		if (c % 2 == 0)
 		{
 			_putchar(*str);
-			str++;
-			c++;
 		}
+		str++;
+		c++;
 	}
 	_putchar('\n');
 }
