@@ -2,9 +2,10 @@
 #include <string.h>
 
 /**
- * puts_half - Entry point
+ * _strcpy - Entry point
  *
- * @str: 'varaibles'
+ * @dest: 'varaibles'
+ * @src: 'variables2'
  *
  * Return: Always 0 (Success)
  */
