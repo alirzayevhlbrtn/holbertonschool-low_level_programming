@@ -1,38 +1,40 @@
 #include "main.h"
-#include <string.h>
-
 /**
- * puts_half - Entry point
- *
- * @str: 'varaibles'
- *
- * Return: Always 0 (Success)
+ * _atoi - convert a string to an integer.
+ * @s: string.
+ * Return: int.
  */
 int _atoi(char *s)
 {
-	int l = strlen(s);
-	int i;
-	int num = 0;
-	int neg = 0;
+	int sign, flag;
+	unsigned int number;
 
-	for (i = 0; i < l; i++)
+	sign = 1;
+	number = 0;
+	flag = 1;
+	while (*s != '\0')
 	{
-		if (s[i] == '-')
+		if (*s > 47 && *s < 58)
 		{
-			neg++;
-		}
-		else if (s[i] >= 48 && s[i] <= 57)
-		{
-			num = num * 10 + ((int)s[i] - 48);
-			if (!(s[i + 1] >= 48 && s[i + 1] <= 57))
+			number = number * 10 + ((int)*s - 48);
+			if (*(s + 1) > 47 && *(s + 1) < 58)
 			{
-				break;
+				flag = 1;
+			}
+			else
+			{
+				flag = 0;
 			}
 		}
+		if (flag == 0)
+		{
+			break;
+		}
+		if (*s == 45)
+		{
+			sign = sign * -1;
+		}
+		s++;
 	}
-	if (neg % 2 != 0)
-	{
-		num = -1 * num;
-	}
-	return (num);
+	return (sign * number);
 }
