@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * puts_half - Entry point
+ * print_array - Entry point
  *
  * @a: varaible1
  * @n: variable2
