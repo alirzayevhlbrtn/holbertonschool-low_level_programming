@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - check the code
+ * reverse_array - check the code
  *
  * @a: variable1
  * @n: variable2
