@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - check the code
+ * string_toupper - check the code
  *
  * @s: variable
  *
