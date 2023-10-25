@@ -12,7 +12,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int s1l, s2l, i, n, k;
-	
+
 	s1l = 0;
 	s2l = 0;
 
@@ -38,7 +38,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		n = s2l;
 	}
-	
+
 	for (i = 0; i < n; i++)
 	{
 		if (s1[i] != s2[i])
