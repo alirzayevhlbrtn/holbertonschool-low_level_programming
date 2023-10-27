@@ -2,10 +2,10 @@
 #include <string.h>
 
 /**
- * swap_int - check the code
+ * _strspn - check the code
  *
- * @a: varable1
- * @b: variable2
+ * @s: varable1
+ * @accept: variable2
  *
  * Return: Always 0.
  */
