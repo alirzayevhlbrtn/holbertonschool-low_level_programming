@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - check the code
+ * _memcpy - check the code
  *
  * @dest: variable1
  * @src: variable2
