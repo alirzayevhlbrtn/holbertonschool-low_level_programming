@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strchr - check the code
@@ -19,5 +20,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	} while (s[i] != '\0');
-	return ('\0');
+	return (NULL);
 }
