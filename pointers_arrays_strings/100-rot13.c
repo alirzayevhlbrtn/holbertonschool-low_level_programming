@@ -3,8 +3,7 @@
 /**
  * rot13 - check the code
  *
- * @a: varable1
- * @b: variable2
+ * @s: varable1
  *
  * Return: Always 0.
  */
