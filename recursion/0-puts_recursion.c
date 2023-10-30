@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _puts_recursion - Entry point
+ * @s: string
  *
  * Return: void
  */
