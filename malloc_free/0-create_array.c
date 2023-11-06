@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _puts_recursion - Entry point
- * @s: string
+ * create_array - Entry point
+ * @size: int
+ * @c: string
  *
  * Return: void
  */
@@ -17,6 +18,10 @@ char *create_array(unsigned int size, char c)
 		unsigned int i;
 		char *ar;
 		ar = malloc(sizeof(char) * size);
+		if (ar == NULL)
+		{
+			return NULL;
+		}
 		for (i = 0; i < size; i++)
 		{
 			ar[i] = c;
