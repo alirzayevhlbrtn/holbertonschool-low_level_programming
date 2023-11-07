@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * create_array - Entry point
- * @_strdup: int
+ * _strdup - Entry point
  * @str: string
  *
  * Return: void
