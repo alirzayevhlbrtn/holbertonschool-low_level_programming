@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc: gay
+ * _calloc - gay
  *
  * @nmemb: int1
  * @size: int2
