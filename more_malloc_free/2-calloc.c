@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc
+ * _calloc: gay
  *
  * @nmemb: int1
  * @size: int2
@@ -10,7 +10,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *s;
+	void *s;
 	unsigned int i;
 
 	if (size == 0 || nmemb == 0)
