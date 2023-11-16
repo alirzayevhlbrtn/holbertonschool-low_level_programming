@@ -1,7 +1,7 @@
-#ifndef SUB_h
+#ifndef SUM_h
 
-#define SUB_h
+#define SUM_h
 
-#define SUB(a, b) ((a) - (b))
+#define SUM(a, b) ((a) + (b))
 
 #endif
