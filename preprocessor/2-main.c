@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main: gay
+ * main - gay
  * Return: gay
  */
 int main(void)
