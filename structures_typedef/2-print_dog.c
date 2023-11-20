@@ -3,10 +3,8 @@
 #include "dog.h"
 /**
  * print_dog - gay
- * @name: gay
- * @age: gay
- * @owner: gay
- * Description: something gay
+ * @d: gay
+ * Return: something gay
  */
 void print_dog(struct dog *d)
 {
@@ -21,9 +19,9 @@ void print_dog(struct dog *d)
 	if (!d->age)
 		printf("(nil)\n");
 	else
-		printf("%f\n", (*d).age);
+		printf("%f\n", 0.);
 	printf("Owner: ");
-	if(d->owner == NULL)
+	if (d->owner == NULL)
 		printf("(nil)\n");
 	else
 		printf("%s\n", (*d).owner);
