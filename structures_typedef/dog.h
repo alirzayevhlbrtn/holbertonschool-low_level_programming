@@ -1,7 +1,7 @@
 #ifndef dog_H
 #define dog_H
 /**
- * struct - gay
+ * dog - gay
  * @name: gay
  * @age: gay
  * @owner: gay
