@@ -1,10 +1,11 @@
 #ifndef dog_H
 #define dog_H
 /**
- * dog - gay
+ * struct dog - gay
  * @name: gay
  * @age: gay
  * @owner: gay
+ * Description: something gay
  */
 struct dog
 {
