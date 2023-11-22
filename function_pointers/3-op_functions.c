@@ -5,7 +5,7 @@
  * @b: gayint2
  * Return: somegay
  */
-int opt_add(int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
