@@ -25,7 +25,7 @@ int op_sub(int a, int b)
  * @b: gayint2
  * Return: somegay
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
