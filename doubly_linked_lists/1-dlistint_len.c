@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistint - gay
+ * dlistint_len - gay
  * @h: dlist
  * Return: len
  */
