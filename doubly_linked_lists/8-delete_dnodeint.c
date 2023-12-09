@@ -1,6 +1,22 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
+ * dlistint_len - gay
+ * @h: head
+ * Return: gay
+ */
+size_t dlistint_len(const dlistint_t *h)
+{
+	size_t size = 0;
+
+	while (h)
+	{
+		h = h->next;
+		size++;
+	}
+	return (size);
+}
+/**
  * delete_dnodeint_at_index - gay
  * @head: 1st node
  * @index: index of delete
