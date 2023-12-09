@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * sum_dlistint = gay
+ * sum_dlistint - gay
  * @head: 1st node
  * Return: sum
  */
 int sum_dlistint(dlistint_t *head)
 {
 	int sum = 0;
+
 	while (head != NULL)
 	{
 		sum = sum + head->n;
