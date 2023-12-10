@@ -13,7 +13,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index < size)
 	{
 		a = *n;
-		*n = *n >>index;
+		*n = *n >> index;
 		*n = *n | 1;
 		*n = *n << index;
 		*n = *n | a;
