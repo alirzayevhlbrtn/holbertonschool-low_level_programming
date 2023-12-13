@@ -2,6 +2,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <stdlib.h>
 /**
  * read_textfile - gay
  * @filename: name of file
