@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <sys/type.h>
+#include <sys/types.h>
 /**
  * read_textfile - gay
  * @filename: name of file
