@@ -21,7 +21,7 @@ void copier(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd1 = open(file_to, O_TRUNC | O_CREAT | O_WRONLY , 0664);
+	fd1 = open(file_to, O_TRUNC | O_CREAT | O_WRONLY, 0664);
 	while (r > 0)
 	{
 		r = read(fd2, buff, 1024);
@@ -37,7 +37,7 @@ void copier(char *file_from, char *file_to)
 			exit(99);
 		}
 	}
-	c = close (fd1);
+	c = close(fd1);
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
