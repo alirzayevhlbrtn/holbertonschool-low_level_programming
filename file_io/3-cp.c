@@ -40,7 +40,7 @@ void copier(char *file_from, char *file_to)
 	c = close (fd1);
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
 		exit(100);
 	}
 	free(buff);
