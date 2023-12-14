@@ -37,7 +37,7 @@ void copier(char *file_from, char *file_to)
 			exit(99);
 		}
 	}
-	c = close (fd);
+	c = close (fd1);
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
