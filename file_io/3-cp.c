@@ -21,7 +21,7 @@ void copier(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd = open(file_to, O_TRUNC | O_CREAT | O_WRONLY , 0664);
+	fd1 = open(file_to, O_TRUNC | O_CREAT | O_WRONLY , 0664);
 	while (r > 0)
 	{
 		r = read(fd2, buff, 1024);
@@ -37,7 +37,7 @@ void copier(char *file_from, char *file_to)
 			exit(99);
 		}
 	}
-	c = close (fd)
+	c = close (fd);
 	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
@@ -53,15 +53,15 @@ void copier(char *file_from, char *file_to)
  */
 int main(int argc, char **argv)
 {
-	char *file, *file_to;
+	char *filef, *filet;
 
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	file_from = argv[1];
-	file_to = argv[2];
-	copier(file_from, file_to);
+	filef = argv[1];
+	filet = argv[2];
+	copier(filef, filet);
 	return (0);
 }
