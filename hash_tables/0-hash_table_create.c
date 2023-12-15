@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "hash_tables.h"
 /**
- * hash_tables_create - gay
+ * hash_table_create - gay
  * @size: size of hash table
  * Return: hash table
  */
