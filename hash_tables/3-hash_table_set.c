@@ -16,7 +16,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *copyk, *copyv;
 	hash_node_t *node, *newnode;
 
-	if (!key || !ht || !(ht->array))
+	if (!key || !ht)
 		return (0);
 	copyv = strdup(value);
 	if (!copyv)
@@ -41,7 +41,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	newnode = (hash_node_t *)malloc(sizeof(hash_node_t));
 	if (!newnode)
+	{
 		return (0);
+	}
 	newnode->value = copyv;
 	newnode->key = copyk;
 	newnode->next = node;
