@@ -1,51 +1,40 @@
 #include "hash_tables.h"
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
+
 /**
- * hash_table_set - gay
+ * hash_table_set - sets given value to given key
  * @ht: hash table
  * @key: key
- * @value: value to store
- * Return: 1 or 0
+ * @value: value
+ * Return: if success 1, otherwise 0
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int size = ht->size;
-	unsigned long int index = key_index((unsigned char *)key, size);
-	char *copyk, *copyv;
-	hash_node_t *node, *newnode;
+	unsigned long int index;
+	hash_node_t *new_node, *buf;
 
-	if (!key || !ht || !(ht->array))
+	if (!ht || !key)
 		return (0);
-	copyv = strdup(value);
-	if (!copyv)
-		return (0);
-	copyk = strdup(key);
-	if (!copyk)
-		return (0);
-
-	node = ht->array[index];
-
-
+	index = key_index((const unsigned char *)key, ht->size);
+	buf = ht->array[index];
 	while (ht->array[index])
 	{
 		if (!strcmp(ht->array[index]->key, key))
 		{
 			free(ht->array[index]->value);
-			ht->array[index]->value = copyv;
+			ht->array[index]->value = strdup(value);
 			return (1);
 		}
 		ht->array[index] = ht->array[index]->next;
 	}
-
-	newnode = (hash_node_t *)malloc(sizeof(hash_node_t));
-	if (!newnode)
+	new_node = (hash_node_t *)malloc(sizeof(hash_node_t));
+	if (!new_node)
 		return (0);
-	newnode->value = copyv;
-	newnode->key = copyk;
-	newnode->next = node;
-	ht->array[index] = newnode;
-
+	new_node->value = strdup(value);
+	new_node->key = strdup(key);
+	new_node->next = buf;
+	ht->array[index] = new_node;
 	return (1);
 }
