@@ -2,7 +2,7 @@
 #include <string.h>
 #include "hash_tables.h"
 /**
- * hash_table_get - gets value from array at the given index
+ * hash_table_get - gay
  * @ht: hash table
  * @key: key
  * Return: string if exist, otherwise NULL
