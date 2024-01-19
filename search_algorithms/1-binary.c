@@ -4,6 +4,7 @@
  * @array: array
  * @size: size of array
  * @value: searched value
+ * Return: -1 or i
  */
 int binary_search(int *array, size_t size, int value)
 {
